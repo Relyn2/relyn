@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="rreset.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-main">
+        <div class="header-main-logo">
+            <img src="./img/R.png" alt="Lyn Logo">
+            <nav class="header-main-nav">
+                <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="gallery.html">GALLERY</a></li>
+                   <li><a href="aboutme.html">ABOUT ME</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+                   
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-main-sm">
+            <a href="https://www.facebook.com/relyn.bacosa.7?mibextid=ZbWKwL" target="_blank"><div class="header-main-sm-fb"></div></a>
+            <a href="wwww.instagram.com"><div class="header-main-sm-in"></div></a>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="gallery">
+            <img src="./img/1.jpeg" alt="Gallery Image 1">
+            <img src="./img/2.jpeg" alt="Gallery Image 2">
+            <img src="./img/3.jpeg" alt="Gallery Image 3">
+            <img src="./img/4.jpeg" alt="Gallery Image 4">
+            <img src="./img/5.jpeg" alt="Gallery Image 5">
+        </div>
+    </div>
+    
+    <div class="lightbox" id="lightbox">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <footer class="footer-main" style="margin-top: auto;">
+        <div class="footer-content">
+            <p>&copy; 2025 Lyn's Website. All Rights Reserved.</p>
+            <p>Contact: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>Follow me on:
+                <a href="https://www.facebook.com/relyn.bacosa.7?mibextid=ZbWKwL" target="_blank">Facebook</a> | 
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
